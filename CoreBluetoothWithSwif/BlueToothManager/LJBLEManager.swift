@@ -307,15 +307,6 @@ class LJBLEManager : NSObject, CBCentralManagerDelegate, CBPeripheralDelegate {
     }
     @objc private func responseTimeout() {
         let timeoutTask = self.getQueueHead(false)
-        /*
-        timeoutTask.canWrite = true
-        timeoutTask.repeatCount -= 1
-        if timeoutTask.repeatCount < 0 {
-            self.dequeueControler(false)
-            timeoutTask.responseResult?(result: .Timeout, receiveData: nil)
-        }
-        self.writeDataToBluetooth() 
-        */
         self.blueToothTransferControl(.Timeout, task: timeoutTask)
     }
     

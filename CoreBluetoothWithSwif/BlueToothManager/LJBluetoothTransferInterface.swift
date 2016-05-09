@@ -153,6 +153,31 @@ class LJBluetoothTransferInterface: NSObject {
     func disconnectDevice(device: LJDevice) {
         self.ljbleShared.disconnectDevice(device)
     }
+    
+    /**
+     发送数据
+     
+     - parameter data:           待发送的数据
+     - parameter timeout:        操时时间
+     - parameter responseResult: 响应结果
+     
+     - returns: 是否发送成功
+     */
+    func sendData(data: NSData, timeout: NSTimeInterval, responseResult: ResponseResultCallBack?) -> Bool {
+        return self.sendData(data, timeout: timeout, repeatCount: 0, responseResult: responseResult)
+    }
+    /**
+     发送数据
+     
+     - parameter data:           待发送的数据
+     - parameter repeatCount:    操时重发次数
+     - parameter responseResult: 响应结果
+     
+     - returns: 是否发送成功
+     */
+    func sendData(data: NSData, repeatCount: Int8, responseResult: ResponseResultCallBack?) -> Bool {
+        return self.sendData(data, timeout: 3, repeatCount: repeatCount, responseResult: responseResult)
+    }
     /**
      发送数据
      

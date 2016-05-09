@@ -17,52 +17,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Hb-m5-TM9">
-                                <rect key="frame" x="41" y="71" width="78" height="51"/>
-                                <color key="backgroundColor" red="0.19215686269999999" green="0.62352941179999999" blue="0.98431372549999996" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="扫描"/>
-                                <connections>
-                                    <action selector="startScanDevice:" destination="BYZ-38-t0r" eventType="touchUpInside" id="y6g-by-RbW"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KzV-Ry-8WK">
-                                <rect key="frame" x="41" y="271" width="82" height="48.5"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <state key="normal" title="电量"/>
-                                <connections>
-                                    <action selector="resetMakeDevice:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PLp-TX-I6J"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MuK-TD-Gr5">
-                                <rect key="frame" x="195" y="359" width="70" height="30"/>
+                                <rect key="frame" x="214" y="288" width="70" height="44"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="断开"/>
                                 <connections>
                                     <action selector="disconnectDevice:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LJq-Oc-N2H"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pLv-mO-atm">
-                                <rect key="frame" x="183" y="73" width="82" height="48.5"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KzV-Ry-8WK">
+                                <rect key="frame" x="32" y="54" width="82" height="48.5"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <state key="normal" title="握手"/>
+                                <state key="normal" title="查询电量"/>
                                 <connections>
-                                    <action selector="goHand:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PqT-eN-25A"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sdh-a4-Zu8">
-                                <rect key="frame" x="41" y="152" width="82" height="48.5"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <state key="normal" title="配对"/>
-                                <connections>
-                                    <action selector="goPair:" destination="BYZ-38-t0r" eventType="touchUpInside" id="V5C-go-gba"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PRu-7j-C92">
-                                <rect key="frame" x="183" y="152" width="82" height="48.5"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <state key="normal" title="配对成功"/>
-                                <connections>
-                                    <action selector="pairSucceed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="X4u-ys-J3f"/>
+                                    <action selector="resetMakeDevice:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PLp-TX-I6J"/>
                                 </connections>
                             </button>
                         </subviews>
