@@ -25,8 +25,16 @@
                                     <action selector="disconnectDevice:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LJq-Oc-N2H"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cpU-KF-DX1">
+                                <rect key="frame" x="46" y="51" width="78" height="51"/>
+                                <color key="backgroundColor" red="0.19215686269999999" green="0.62352941179999999" blue="0.98431372549999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="扫描"/>
+                                <connections>
+                                    <action selector="startScanDevice:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cKl-ta-29L"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KzV-Ry-8WK">
-                                <rect key="frame" x="32" y="54" width="82" height="48.5"/>
+                                <rect key="frame" x="46" y="259" width="82" height="48.5"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="查询电量"/>
                                 <connections>
@@ -40,7 +48,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="245" y="244"/>
+            <point key="canvasLocation" x="98" y="244"/>
         </scene>
     </scenes>
 </document>
