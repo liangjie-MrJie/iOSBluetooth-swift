@@ -60,6 +60,8 @@ class ViewController: UIViewController, LJBLEManagerDelegate {
         }
     }
     
+    
+    
     @IBAction func resetMakeDevice(sender: UIButton) {
         let queryBatteryLevel = self.batteryLevel(0x1d, length: 0)
         let flag = self.ljBLE.sendData(queryBatteryLevel, timeout: 3, repeatCount: 2) { (result, receiveData) in print("result: \(result) batteryLevel: \(receiveData)")
